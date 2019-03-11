@@ -152,23 +152,61 @@ h1{
   align-items: center;
 }
 
-.site_logo{
+#site-links{ 
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  margin-bottom: 25em;
+}
+
+#site-links img{
   opacity: 1;
   transition: opacity .20s ease-in-out;
   width: 56px;
   margin: 0 10px 10px 0;
 }
-.site_logo:hover{
+
+#site-links img:hover{
   opacity: 0.5;
 }
-#site_links{ 
-  display: flex;
-  align-items: baseline;
-  justify-content: flex-start;
-  margin-bottom: 8em;
+
+#skills{
+  padding 50px 15px;
 }
 
+#skills ul {
+  display: block;
+  margin: 0;
+  padding: 0;
+  max-width: 800px;
+}
 
+#skills li {
+  display: inline-block;
+  margin: 7px;
+  padding: 5px 10px;
+  background: lightgray;
+  list-style: none;
+  cursor: default;
+  font-size: 1.2em;
+}
+
+#footer{
+  margin-top: 10em;
+  text-align: center;
+}
+
+.footer-navigation{
+  font-size: 15px;
+  margin: 1em;
+  text-decoration: none;
+  color: orangered;
+  transition: color .20s ease-in-out;
+}
+
+.footer-navigation:hover{
+  color: #219eff;
+}
 
 
 
