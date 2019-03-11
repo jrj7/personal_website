@@ -116,14 +116,14 @@ h1{
   margin: 0 5px;
 }
 
-.navigation{
+.nav{
   margin: 0 1.5em 1.5em 0;
   color: orangered;
   transition: color .20s ease-in-out;
   text-decoration: none;
   font-size: 20px;
 }
-.navigation:hover{
+.nav:hover{
   color: #219eff;
 }
 
@@ -196,7 +196,7 @@ h1{
   text-align: center;
 }
 
-.footer-navigation{
+.footer-nav{
   font-size: 15px;
   margin: 1em;
   text-decoration: none;
@@ -204,7 +204,17 @@ h1{
   transition: color .20s ease-in-out;
 }
 
-.footer-navigation:hover{
+.footer-nav:hover{
+  color: #219eff;
+}
+
+.footer-link{
+  color: orangered;
+  transition: color .20s ease-in-out;
+  text-decoration: none;
+}
+
+.footer-link:hover{
   color: #219eff;
 }
 
