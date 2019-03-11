@@ -132,9 +132,24 @@ h1{
   margin-top: 5em;
   margin-bottom: 0;
 }
-.left-aligned {
+#main-description {
   margin-top: 0;
+  width: 90%;
+}
+
+#left-align{
+  float:left;
+}
+#me {
+  border-radius: 5%;
+  float:right;
+  margin-left: 5em;
   width: 40%;
+  height: auto;
+}
+#main{
+  display: flex;
+  align-items: center;
 }
 
 .site_logo{
