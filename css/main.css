@@ -97,7 +97,7 @@ textarea {
    ========================================================================== */
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif !important;
   font-weight: normal;
   font-size: 1em;
   color: #484463;
