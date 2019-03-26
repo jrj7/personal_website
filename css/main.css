@@ -98,8 +98,10 @@ textarea {
 
 body {
   font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-size: 1em;
   color: #484463;
-  margin: 5% 20%;
+  margin: 5% 15%;
 }
 
 h1{
@@ -132,24 +134,33 @@ h1{
   margin-top: 5em;
   margin-bottom: 0;
 }
+
 #main-description {
   margin-top: 0;
-  width: 90%;
+  max-width: 100%;
+  width: 35em;
+  height:auto;
 }
 
 #left-align{
   float:left;
+  align-self: center;
 }
+
 #me {
+  margin-top:5em;
+  margin-left:5em;
   border-radius: 5%;
   float:right;
-  margin-left: 5em;
-  width: 40%;
+  max-width: 100%;
+  width: 500px;
   height: auto;
 }
 #main{
   display: flex;
-  align-items: center;
+  align-items: baseline;
+  max-width: 100%;
+  height: auto;
 }
 
 #site-links{ 
