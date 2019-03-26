@@ -96,13 +96,13 @@ textarea {
    Author's custom styles
    ========================================================================== */
 @font-face{
-  font-family: 'Roboto';
-  src: '//fonts.googleapis.com/css?family=Roboto';
-  font-weight: normal;
+  font-family: "Roboto";
+  src: url('//fonts.googleapis.com/css?family=Roboto');
   font-style: normal;
+  font-weight: 300;
 }
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif !important;
   font-size: 1em;
   color: #484463;
   margin: 5% 15%;
