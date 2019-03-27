@@ -110,8 +110,9 @@ body {
 
 h1{
   font-size: 40px;
-  margin: 2px 0;
+  margin: 0.2em 0;
 }
+
 #title{
   display: flex;
   align-items: baseline;
@@ -119,7 +120,7 @@ h1{
 }
 
 #h2_space{
-  margin: 0 5px;
+  margin: 0 0 0 0.5em;
 }
 
 .nav{
@@ -137,6 +138,7 @@ h1{
   display: flex;
   align-items: baseline;
   max-width: 100%;
+  width: 100em;
   height: auto;
 }
 
@@ -222,6 +224,9 @@ h1{
 .section-block ul{
   margin: 0 0 1em 2em;
 }
+#coursework{
+  width: 55em;
+}
 
 #skills{
   padding 50px 15px;
@@ -283,6 +288,13 @@ h1{
   margin: 5em 0 0 0;
 }
 
+#about-container{
+  max-width: 100%;
+  width: 60em;
+  height: auto;
+  font-size: 1.2em;
+}
+
 #footer{
   margin-top: 10em;
   text-align: center;
@@ -309,14 +321,6 @@ h1{
 .footer-link:hover{
   color: #219eff;
 }
-
-
-
-
-
-
-
-
 
 
 
