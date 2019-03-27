@@ -1,2 +1,2 @@
 # personal_website
-Source code for [domain here]. Hosted on GitHub Pages.
+Source code for jessicajones.dev. Hosted on Netlify.
