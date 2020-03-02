@@ -100,7 +100,9 @@ textarea {
   src: url('//fonts.googleapis.com/css?family=Roboto');
   font-style: normal;
 }
-
+@media (min-width: 360px){
+  
+}
 body {
   font-family: 'Roboto', sans-serif !important;
   font-size: 1em;
@@ -113,10 +115,14 @@ h1{
   margin: 0.2em 0;
 }
 
+header{
+  width: 100%
+}
 #title{
   display: flex;
   align-items: baseline;
   margin-bottom: 1em;
+  width: 100%;
 }
 
 #h2_space{
@@ -137,8 +143,7 @@ h1{
 #main{
   display: flex;
   align-items: baseline;
-  max-width: 100%;
-  width: 100em;
+  width: 100%;
   height: auto;
 }
 
