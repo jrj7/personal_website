@@ -109,7 +109,6 @@ body {
 }
 
 h1{
-  font-size: 40px;
   margin: 0.2em 0;
 }
 
@@ -117,6 +116,7 @@ header{
   width: 100%;
 }
 #title{
+  font-size: 80%;  
   display: flex;
   align-items: baseline;
   margin-bottom: 1em;
