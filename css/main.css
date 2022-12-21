@@ -15,6 +15,7 @@
    html {
     font-size: 1em;
     line-height: 1.4;
+    overflow-x: hidden;
 }
 
 /*
@@ -106,6 +107,7 @@ body {
   font-size: 1em;
   color: #484463;
   margin: 5% 15%;
+  overflow-x: hidden;
 }
 
 h1{
@@ -134,12 +136,22 @@ h1{
   color: #219eff;
 }
 
+#about-mobile{
+  display:none;
+}
+
 #main{
   display: flex;
   align-items: baseline;
   max-width: 100%;
   width: 100em;
   height: auto;
+}
+
+#intro{
+  float:left;
+  align-self: center;
+  max-width:100%
 }
 
 #tagline{
@@ -155,22 +167,18 @@ h1{
   height:auto;
 }
 
-#left-align{
-  float:left;
-  align-self: center;
-  max-width:100%
-}
-
-#me {
+#me-desktop {
   margin-top:5em;
   margin-left:5em;
   border-radius: 5%;
-  float:right;
+  float: right;
   max-width: 100%;
   width: 500px;
   height: auto;
 }
-
+#me-mobile{
+  display:none;
+}
 #site-links{ 
   display: flex;
   align-items: baseline;
@@ -251,6 +259,8 @@ h1{
   font-size: 1.5em;
 }
 
+/* no longer being used
+
 #projects{
   margin: 5em 0 0 0;
 }
@@ -283,7 +293,7 @@ h1{
 
 #trucker{
   margin-top: 1.2em;
-}
+} */
 
 #about{
   margin: 5em 0 0 0;
@@ -302,7 +312,6 @@ h1{
 }
 
 .footer-nav{
-  font-size: 15px;
   margin: 1em;
   text-decoration: none;
   color: orangered;
@@ -311,6 +320,10 @@ h1{
 
 .footer-nav:hover{
   color: #219eff;
+}
+
+#footer-about-mobile {
+  display:none;
 }
 
 .footer-link{
@@ -323,7 +336,107 @@ h1{
   color: #219eff;
 }
 
+@media only screen and (max-width: 1023px){
+  body {
+    margin: 2em;
+  }
 
+  #title{
+    display:grid;
+  }
+
+  #name {
+    font-size: 35px;
+  }
+
+  #h2_space{
+    font-size: 20px;
+    text-align: left;
+    margin: 0;
+  }
+
+  .nav {
+    font-size:17px;
+    margin:0 0.5em 0.5em 0;
+  }
+
+  #intro {
+    float: none;
+  }
+
+  #tagline {
+    font-size: 30px;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+  }
+
+  #me-mobile {
+    display:block;
+    max-width: 100%;
+    width: 50%;
+    height: auto;
+    border-radius: 5%;
+  }
+
+  #me-desktop {
+    display:none;
+  }
+
+  #main-description {
+    margin-top: 1em;
+    max-width: 100%;
+  }
+
+  #site-links {
+    margin-bottom: 7em;
+  }
+  .section-header {
+    font-size: 35px;
+  }
+
+  .section-block{
+    max-width: 100%;
+    margin: 1em 0 1em 0;
+    padding: 1em;
+  }
+  .section-block h3{
+    font-size: 20px;
+    float: left;
+    margin-bottom: 0.5em;
+  }
+
+  .section-block span {
+    float:left;
+    margin-bottom:0.5em;
+  }
+
+  .section-block h4 {
+    margin: 0.5em 0 0.5em 0;
+  }
+
+  .section-block ul{
+    margin: 0 0 0 0;
+    padding-left: 2em;
+  }
+
+  #skills{
+    padding: 0;
+  }
+
+  #skills li {
+    margin: 5px;
+    font-size: 1.2em;
+  }
+
+  #footer {
+    text-align: left;
+  }
+
+  .footer-nav{
+    font-size: 15px;
+    margin: 0 0.5em 0 0;
+  }
+}
 
 
  /* ==========================================================================
@@ -404,24 +517,6 @@ h1{
 
 .clearfix:after {
   clear: both;
-}
-
- 
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-   @media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
 }
 
  
