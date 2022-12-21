@@ -15,6 +15,7 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <!--<link rel="stylesheet" media="screen and (max-width: 900px)" href="css/small.css"> -->
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -32,18 +33,20 @@
   
   <header>
     <div id="title">    
-      <h1>Jessica R. Jones,</h1>
+      <h1 id="name">Jessica R. Jones,</h1>
       <h2 id="h2_space">DevOps Engineer</h2> 
-    </div>   
-    <a href="#experience" class="nav">Experience</a>
-    <a href="#education" class="nav">Education</a>
-    <a href="#skills" class="nav">Skills</a>
-    <a href="#about" class="nav">About Me</a>
+    </div> 
+      <a href="#experience" class="nav">Experience</a>
+      <a href="#education" class="nav">Education</a>
+      <a href="#skills" class="nav">Skills</a>
+      <a href="#about" class="nav" id="about-desktop">About Me</a>
+      <a href="#about" class="nav" id="about-mobile">About</a>
   </header>
   
   <div id="main">
-    <div id="left-align">
+    <div id="intro">
       <h2 id="tagline">Creative meets Technical.</h2>
+      <img src="img/me_mobile.jpg" alt="picture of me" id="me-mobile">
       <h3 id="main-description">Welcome to my website! I'm a Junior DevOps Engineer currently working at TTI Consumer Power Tools in Anderson, SC. </h3>
       <div id="site-links">
         <a href="https://github.com/jrj7">
@@ -54,8 +57,7 @@
         </a>
       </div>
     </div>
-    
-    <img src="img/me.jpg" alt="me" id="me">
+    <img src="img/me.jpg" alt="picture of me" id="me-desktop">
   </div>
   
   <div id="experience">
@@ -126,7 +128,7 @@
       <h4>Minor in Digital Production Arts</h4>
       <ul>
         <li>GPA: 3.04/4.0</li>
-        <li id="coursework">Selected Coursework: Algorithms and Data Structures, Computer Organization, Software Development, Programming Methodologies, 2D Game Engine Development, Web Programming, Game Design</li>
+        <li>Selected Coursework: Algorithms and Data Structures, Computer Organization, Software Development, Programming Methodologies, 2D Game Engine Development, Web Programming, Game Design</li>
       </ul>
     </div>
   </div>
@@ -149,7 +151,7 @@
       <li>Agile Methodology</li>
       <li>Adobe Photoshop/Lightroom</li>
     </ul>
-    <h2>Programming Languages</h2>
+    <h3>Programming Languages</h3>
     <ul>
       <li>C</li>
       <li>C++</li>
@@ -168,10 +170,10 @@
   </div>
   
   <footer id="footer">
+    <hr>
     <a href="#experience" class="footer-nav">Experience</a>
     <a href="#education" class="footer-nav">Education</a>
     <a href="#skills" class="footer-nav">Skills</a>
-    <a href="#about" class="footer-nav">About Me</a>
     <br><br>
     
     <a href="#title" class="footer-link">Back to top</a>
