@@ -3,7 +3,7 @@ body {
     margin: 1rem 2rem;
 }
 
-.nav .nav-link{
+.nav .nav-link {
     color: orangered;
 }
 
@@ -19,7 +19,7 @@ body {
     font-size: 1.25rem;
 }
 
-#intro_text{
+#intro_text {
     font-size: 1.1rem;
 }
 
@@ -29,10 +29,10 @@ body {
 
 .footer-link {
     color: orangered;
-    transition: color .20s ease-in-out;
+    transition: color 0.2s ease-in-out;
     text-decoration: none;
-  }
-  
+}
+
 .footer-link:hover {
     color: #219eff;
 }
@@ -41,21 +41,20 @@ body {
 /* No media query for `xs` since this is the default in Bootstrap */
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) { 
-
+@media (min-width: 576px) {
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
-
- }
+@media (min-width: 768px) {
+}
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {  }
+@media (min-width: 992px) {
+}
 
 /* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {  
-    body{
+@media (min-width: 1200px) {
+    body {
         margin: 3rem 5rem;
     }
     #image_me {
@@ -63,4 +62,5 @@ body {
     }
 }
 /* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {  }
+@media (min-width: 1400px) {
+}
