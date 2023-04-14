@@ -24,57 +24,38 @@
 </head>
 
 <body>
-  <!--[if lte IE 9]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
-
-  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+  <!--<script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script> -->
+  <script
+  src="https://code.jquery.com/jquery-3.6.4.min.js"
+  integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+  crossorigin="anonymous"></script>
   <script src="js/main.js"></script>
-  
+
   <header>
     <div class="container-fluid" id="title">    
       <h1 class="display-5" id="name">Jessica R. Jones,
         <small class="text-muted">Web Developer</small>
       </h1>
       <nav class="nav mb-3">
-        <a class="nav-link" href="#experience">Experience</a>
-        <a class="nav-link" href="#education">Education</a>
-        <a class="nav-link" href="#skills">Skills</a>
-        <a class="nav-link" href="#about">About Me</a>
+        <a class="nav-link" id="header_nav" href="#experience">Experience</a>
+        <a class="nav-link" id="header_nav" href="#education">Education</a>
+        <a class="nav-link" id="header_nav" href="#skills">Skills</a>
+        <a class="nav-link" id="header_nav" href="#about">About Me</a>
       </nav>
     </div> 
-
-      <!-- <a href="#experience" class="nav">Experience</a>
-      <a href="#education" class="nav">Education</a>
-      <a href="#skills" class="nav">Skills</a>
-      <a href="#about" class="nav" id="about-desktop">About Me</a>
-      <a href="#about" class="nav" id="about-mobile">About</a> -->
   </header>
   
   <div id="main">
-    <!--<div id="intro">
-      <h2 id="tagline">Creative meets Technical.</h2>
-      <img src="img/me_mobile.jpg" alt="picture of me" id="me-mobile">
-      <h3 id="main-description">Welcome to my website! I'm a Junior DevOps Engineer currently working at TTI Consumer Power Tools in Anderson, SC. </h3>
-      <div id="site-links">
-        <a href="https://github.com/jrj7">
-          <img src="img/github.png" alt="github">
-        </a>
-        <a href="https://linkedin.com/in/jessicajones96">
-          <img src="img/linkedin.png" alt="linkedin">
-        </a>
-      </div>
-    </div>
-    <img src="img/me.jpg" alt="picture of me" id="me-desktop"> -->
     <div class="container-fluid">
       <div class="row">
         <div class="col d-flex align-self-center flex-column">
           <h2 class="display-6 p-2">Creative meets Technical.</h2>
-          <p class="p-1">Welcome to my website! I'm a Senior Web Developer currently working at Clemson University.</p>
-          <div class="d-flex flex-row">
+          <p class="p-1 ms-2" id="intro_text">Welcome to my website! I'm a Senior Web Developer currently working at Clemson University.</p>
+          <div class="d-flex flex-row ms-2">
             <a class="p-1" href="https://github.com/jrj7">
               <img class="img-fluid" src="img/github.png" alt="github"></img>
             </a>
@@ -91,7 +72,6 @@
   </div>
   
   <div id="experience">
-    <!--<h1 class="section-header">Experience</h1> <hr> -->
     <h2 class="display-6 mb-3 secondary">Experience</h2>
     <div class="list-group mb-3">
       <div class="list-group-item primary">
@@ -162,65 +142,10 @@
         </ul>
       </div>
     </div>
-    
-    <!--<div class="section-block">
-      <h3>TTI Consumer Power Tools</h3>
-      <span class="experience-date">April 2019 - Present</span>
-      <h4>Junior DevOps Engineer</h4>
-      <ul>
-        <li>IT Team Lead for Direct Tools Factory Outlet ecommerce platform.</li>
-        <li>Collaborate with business representatives to support the integration of SAP Commerce Cloud with SAP ERP.</li>
-        <li>Hands-on managed the transition from implementation partner to new long-term managed services vendor</li>
-          <ul>
-            <li>Rebased Bitbucket repository</li>
-            <li>Established new documentation repository in Confluence</li>
-            <li>Managed new agile development processes through Jira</li>
-          </ul>
-        <li>Implemented automated processes and development standards to prevent disruptions and support continuous delivery.</li>
-        <li>Supported transition from SAP Commerce Cloud storefront to custom headless frontend using Vue framework.</li>
-          <ul>
-            <li>Migrated to AWS DevOps stack to automate unit testing and achieve continuous integration.</li>
-          </ul>
-        <li>Performed root-cause analysis across multiple layers of cloud and on-prem integrated applications.</li>
-        <li>Implemented Sentry site monitoring to provide proactive alerting and rapid response capabilities.</li>
-        <li>Collaborated with development, business, and infrastructure teams to design and implement new features, expand on existing functionality, and triage production issues.</li>
-      </ul>
-    </div>
-    
-    <div class="section-block">
-      <h3>Lowe's Companies, Inc.</h3>
-      <span class="experience-date">June 2018 - August 2018</span>
-      <h4>Digital Operations Intern</h4>
-      <ul>
-        <li>Worked with team to conceptualize and document an internal-use project.</li>
-        <li>Designed front-end website experience and implemented back-end server code.</li>
-      </ul>
-    </div>
-    
-    <div class="section-block">
-      <h3>Clemson University Athletic Department</h3>
-      <span class="experience-date">August 2017 - December 2018</span>
-      <h4>Sports Photographer</h4>
-      <ul>
-        <li>Photographed sporting events for official Clemson Athletics website.</li>
-        <li>Labeled and archived photographs for Athletic Department libraries.</li>
-      </ul>
-    </div>
-    
-    <div class="section-block">
-      <h3>Lowe's Companies, Inc.</h3>
-      <span class="experience-date">May 2017 - August 2017</span>
-      <h4>Seasonal Cashier</h4>
-      <ul>
-        <li>Conducted customer transactions via a point of sale terminal.</li>
-        <li>Handled customer inquiries, processed orders, and processed returns both in-person and via phone.</li>
-      </ul> 
-    
-    </div> -->
   </div>
   
   <div id="education">
-    <h2 class="display-6 mb-3 secondary">Education</h2>
+    <h2 class="display-6 mb-3 mt-5 secondary">Education</h2>
     <div class="list-group mb-3">
       <div class="list-group-item primary">
         <div class="d-flex justify-content-between">
@@ -232,94 +157,73 @@
         </h5>
       </div>
     </div>
-
-
-    <!-- <h1 class="section-header">Education</h1> <hr>
-    <div class="section-block">
-      <h3>Clemson University</h3>
-      <span class="education-date">August 2015 - December 2018</span>
-      <h4>Bachelor of Arts in Computer Science</h4>
-      <h4>Minor in Digital Production Arts</h4>
-      <ul>
-        <li>GPA: 3.04/4.0</li>
-        <li>Selected Coursework: Algorithms and Data Structures, Computer Organization, Software Development, Programming Methodologies, 2D Game Engine Development, Web Programming, Game Design</li>
-      </ul>
-    </div> -->
   </div>
   
   <div id="skills"> 
-    <h2 class="display-6 mb-3 secondary">Skills</h2> <hr>
-    <div class="d-flex flex-wrap text-center ms-1 fs-5">
-      <div class="m-2 p-2 border bg-light">Jira</div>
-      <div class="m-2 p-2 border bg-light">Confluence</div>
-      <div class="m-2 p-2 border bg-light">Bitbucket</div>
-      <div class="m-2 p-2 border bg-light">AWS DevOps</div>
-      <div class="m-2 p-2 border bg-light">Docker</div>
-      <div class="m-2 p-2 border bg-light">Kubernetes</div>
-      <div class="m-2 p-2 border bg-light">Bootstrap</div>
-      <div class="m-2 p-2 border bg-light">Vue</div>
-      <div class="m-2 p-2 border bg-light">SAP Commerce Cloud</div>
-      <div class="m-2 p-2 border bg-light">Google Analytics</div>
-      <div class="m-2 p-2 border bg-light">Adobe Photoshop/Lightroom</div>
-      <div class="m-2 p-2 border bg-light">Node.js</div>
+    <h2 class="display-6 mb-3 mt-5 secondary">Skills</h2> <hr>
+    <div class="row">
+      <div class="col-lg d-flex flex-wrap text-center ms-1 fs-5 mb-3">
+        <div class="m-2 p-2 border bg-light">Jira</div>
+        <div class="m-2 p-2 border bg-light">Confluence</div>
+        <div class="m-2 p-2 border bg-light">Bitbucket</div>
+        <div class="m-2 p-2 border bg-light">AWS DevOps</div>
+        <div class="m-2 p-2 border bg-light">Docker</div>
+        <div class="m-2 p-2 border bg-light">Kubernetes</div>
+        <div class="m-2 p-2 border bg-light">Git</div>
+        <div class="m-2 p-2 border bg-light">Bootstrap</div>
+        <div class="m-2 p-2 border bg-light">Vue</div>
+        <div class="m-2 p-2 border bg-light">SAP Commerce Cloud</div>
+        <div class="m-2 p-2 border bg-light">Google Analytics</div>
+        <div class="m-2 p-2 border bg-light">Adobe Photoshop/Lightroom</div>
+        <div class="m-2 p-2 border bg-light">Node.js</div>
+        <div class="m-2 p-2 border bg-light">Spring Boot</div>
+        <div class="m-2 p-2 border bg-light">Kibana</div>
+        <div class="m-2 p-2 border bg-light">MySQL</div>
+        <div class="m-2 p-2 border bg-light">Linux</div>
+      </div>
+      <div class="col-lg"></div>
     </div>
-    <h4 class="primary">Programming Languages</h4>
-    <div class="row d-inline-flex text-center ms-1 fs-5">
-      <div class="col m-3 border bg-light">PHP</div>
-      <div class="col m-3 border bg-light">Python</div>
-      <div class="col m-3 border bg-light">C++</div>
-      <div class="col m-3 border bg-light">Javascript</div>
-      <div class="col m-3 border bg-light">Java/Spring</div>
-      <div class="col m-3 border bg-light">HTML</div>
-      <div class="col m-3 border bg-light">CSS</div>
+    <h4 class="ms-1 mb-3 primary">Programming Languages</h4>
+    <div class="d-flex flex-wrap text-center ms-1 fs-5 mb-3">
+      <div class="m-2 p-2 border bg-light">PHP</div>
+      <div class="m-2 p-2 border bg-light">Python</div>
+      <div class="m-2 p-2 border bg-light">Java</div>
+      <div class="m-2 p-2 border bg-light">HTML</div>
+      <div class="m-2 p-2 border bg-light">CSS</div>
+      <div class="m-2 p-2 border bg-light">Javascript</div>
+      <div class="m-2 p-2 border bg-light">C++</div>
+      <div class="m-2 p-2 border bg-light">SQL</div>
     </div>
-    <!--<h1 class="section-header">Skills</h1> <hr>
-    <ul>
-      <li>Jira</li>
-      <li>Bitbucket</li>
-      <li>Confluence</li>
-      <li>SAP Commerce Cloud</li>
-      <li>SAP CPI</li>
-      <li>Sentry</li>
-      <li>Kibana</li>
-      <li>Google Analytics</li>
-      <li>Unix</li>
-      <li>Node.js</li>
-      <li>Vue</li>
-      <li>AWS DevOps Stack</li>
-      <li>Agile Methodology</li>
-      <li>Adobe Photoshop/Lightroom</li>
-    </ul>
-    <h3>Programming Languages</h3>
-    <ul>
-      <li>C</li>
-      <li>C++</li>
-      <li>JavaScript</li>
-      <li>HTML/CSS</li>
-      <li>Java/Spring</li>
-      <li>Python</li>
-      <li>Bash</li>
-      <li>PHP</li>
-    </ul>
-  </div> -->
   
   <div id="about">
-    <h1 class="section-header">About Me</h1> <hr>
-    <p id="about-container">My name is Jessica Jones and I currently live in Simpsonville, SC. I enjoy collaborating with others and challenging myself with creative ways to problem-solve. In my free time I enjoy photography, hiking, traveling, and video games. Please feel free to contact me at <a href="mailto:jones.jessr@gmail.com" class="footer-link">jones.jessr@gmail.com</a>.</p>
+    <h2 class="display-6 mb-3 mt-5 secondary">About Me</h2> <hr>
+    <div class="row">
+      <div class="col-lg">
+        <p id="about_text">
+          My name is Jessica Jones and I currently live in Simpsonville, SC. I enjoy collaborating with others and challenging myself with creative ways to problem-solve. In my free time I enjoy photography, hiking, traveling, and video games. Please feel free to contact me at 
+          <a href="mailto:jones.jessr@gmail.com" class="footer-link">jones.jessr@gmail.com</a>.
+        </p>
+      </div>
+      <div class="col-lg"></div>
+    </div>
+    <hr>
   </div>
   
   <footer id="footer">
-    <hr>
-    <a href="#experience" class="footer-nav">Experience</a>
-    <a href="#education" class="footer-nav">Education</a>
-    <a href="#skills" class="footer-nav">Skills</a>
-    <br><br>
-    
-    <a href="#title" class="footer-link">Back to top</a>
+    <nav class="nav mb-5 justify-content-center">
+      <a class="nav-link" href="#experience">Experience</a>
+      <a class="nav-link" href="#education">Education</a>
+      <a class="nav-link" href="#skills">Skills</a>
+    </nav>
 
-    <p>Created by Jessica R. Jones, 2022</p>
-    <p>View the source code on <a href="https://github.com/jrj7/personal_website" class="footer-link">Github</a>. 
+    <div class="d-flex justify-content-center mb-3">
+      <a class="footer-link text-center" href="#title">Back to top</a>
+    </div>
+    <p class="text-center">Created by Jessica R. Jones, 2023</p>
+    <p class="text-center">View the source code on <a href="https://github.com/jrj7/personal_website" class="footer-link">Github</a>. 
       Hosted on <a href="https://www.netlify.com/" class="footer-link">Netlify</a>.</p>
+    
+
   </footer>
 </body>
 
