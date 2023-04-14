@@ -1,0 +1,66 @@
+body {
+    color: #484463;
+    margin: 1rem 2rem;
+}
+
+.nav .nav-link {
+    color: orangered;
+}
+
+.primary {
+    color: #484463;
+}
+
+.secondary {
+    color: orangered;
+}
+
+#header_nav {
+    font-size: 1.25rem;
+}
+
+#intro_text {
+    font-size: 1.1rem;
+}
+
+#about_text {
+    font-size: 1.1rem;
+}
+
+.footer-link {
+    color: orangered;
+    transition: color 0.2s ease-in-out;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: #219eff;
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    body {
+        margin: 3rem 5rem;
+    }
+    #image_me {
+        padding: 10rem;
+    }
+}
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+}

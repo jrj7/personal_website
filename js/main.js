@@ -1,7 +1,9 @@
 // handle links with @href started with '#' only
-$(document).on('click', 'a[href^="#"]', function(e) {
+$(document).on("click", 'a[href^="#"]', function (e) {
+    e.preventDefault();
+
     // target element id
-    var id = $(this).attr('href');
+    var id = $(this).attr("href");
 
     // target element
     var $id = $(id);
@@ -9,12 +11,14 @@ $(document).on('click', 'a[href^="#"]', function(e) {
         return;
     }
 
-    // prevent standard hash navigation (avoid blinking in IE)
-    e.preventDefault();
+    //scroll to top
+    if (id == "#title") {
+        $("body, html").animate({ scrollTop: 0 });
+    } else {
+        //scroll to element
+        var pos = $id.offset().top;
 
-    // top position relative to the document
-    var pos = $id.offset().top;
-
-    // animated top scrolling
-    $('body, html').animate({scrollTop: pos});
+        // animated top scrolling
+        $("body, html").animate({ scrollTop: pos });
+    }
 });
