@@ -1,0 +1,31 @@
+body {
+    font-family: monospace;
+    font-size: 14px;
+    margin: 20px 10px 0px 20px;
+    text-align: left;
+    width: 30%;
+}
+.header, .header-item, .footer, .footer-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: normal;
+}
+h2 {
+    font-size: 14px;
+}
+.sub {
+    text-indent: 10%;
+}
+.sub-bold {
+    font-weight: bold;
+}
+.double-sub {
+    text-indent: 20%;
+}
+.triple-sub {
+    text-indent: 20%;
+}
+li {
+    list-style: none;
+}
